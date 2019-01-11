@@ -1,6 +1,7 @@
 const mongoose = require('../db/connection')
 
 const PostSchema = new mongoose.Schema({
+    img : String,
     title: String,
     author: String,
     content: String
