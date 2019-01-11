@@ -1,7 +1,8 @@
 const mongoose = require('../db/connection')
 
 const UserSchema = new mongoose.Schema({
-	email: String,
+    email: String,
+    name: String,
     password: String,
     joinDate: Date,
     currentCity: String,

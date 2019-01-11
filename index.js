@@ -16,6 +16,7 @@ app.use(bodyParser.json())
 
 //routes
 app.use('/users', userController)
+app.use('/files', express.static('files'));
 
 
 //server connection

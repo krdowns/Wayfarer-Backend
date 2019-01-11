@@ -1,0 +1,22 @@
+[
+    {
+        "name": "San Francisco",
+        "picture": "localhost:3000/files/cities/SanFrancisco.jpg",
+        "posts": "Poo Everywhere"
+    },
+    {
+        "name": "Berlin",
+        "picture": "localhost:3000/files/cities/Berlin.jpg",
+        "posts": "Didn't they used to have a wall here?"
+    },
+    {
+        "name": "Sydney",
+        "picture": "localhost:3000/files/cities/Sydney.jpg",
+        "posts": "Dingo Babies"
+    },
+    {
+        "name": "Hong Kong",
+        "picture": "localhost:3000/files/cities/HongKong.jpg",
+        "posts": "Beautiful Skyline"
+    }
+]
