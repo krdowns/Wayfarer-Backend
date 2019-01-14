@@ -26,7 +26,8 @@ router.post('/signup', (req, res) => {
                   res.json({
                      token,
                      name: user.name,
-                     currentCity: user.currentCity
+                     currentCity: user.currentCity,
+                     joinDate: user.joinDate
                      })
                 } else {
                   res.sendStatus(401)
@@ -51,7 +52,8 @@ router.post('/signup', (req, res) => {
             res.json({
                token,
                name: user.name,
-               currentCity: user.currentCity
+               currentCity: user.currentCity,
+               joinDate: user.joinDate
               })
           } else {
             res.sendStatus(401)
