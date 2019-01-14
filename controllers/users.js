@@ -9,8 +9,11 @@ const User = mongoose.model('User')
 router.post('/signup', (req, res) => {
     if (req.body.email && req.body.password) {
       let newUser = {
+        name: req.body.name,
         email: req.body.email,
-        password: req.body.password
+        password: req.body.password,
+        name: req.body.name,
+        currentCity: req.body.currentCity
       }
       User.findOne({ email: req.body.email })
         .then((user) => {
@@ -20,7 +23,11 @@ router.post('/signup', (req, res) => {
                 if (user) {
                   let payload = { id: newUser.id }
                   let token = jwt.encode(payload, config.jwtSecret)
-                  res.json({ token })
+                  res.json({
+                     token,
+                     name: user.name,
+                     currentCity: user.currentCity
+                     })
                 } else {
                   res.sendStatus(401)
                 }
@@ -41,7 +48,11 @@ router.post('/signup', (req, res) => {
           if (user.password === req.body.password) {
             let payload = { id: user.id }
             let token = jwt.encode(payload, config.jwtSecret)
-            res.json({ token })
+            res.json({
+               token,
+               name: user.name,
+               currentCity: user.currentCity
+              })
           } else {
             res.sendStatus(401)
           }

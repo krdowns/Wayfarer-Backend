@@ -1,5 +1,6 @@
 const mongoose = require('../models/City')
 const data = require('./city-data')
+
 const City = mongoose.model('City')
 
 City.remove({})

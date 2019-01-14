@@ -5,6 +5,7 @@ const passport = require('./config/passport')()
 
 //controllers
 const userController = require('./controllers/users.js')
+const citiesController = require('./controllers/cities.js')
 
 const app = express()
 
@@ -17,6 +18,7 @@ app.use(bodyParser.json())
 //routes
 app.use('/users', userController)
 app.use('/files', express.static('files'));
+app.use('/api/cities', citiesController)
 
 
 //server connection
