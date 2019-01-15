@@ -7,7 +7,6 @@ const UserSchema = new mongoose.Schema({
     password: String,
     joinDate: Date,
     currentCity: String,
-    posts: String
 })
 
 mongoose.model('User', UserSchema)

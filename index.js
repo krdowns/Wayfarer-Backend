@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors')
 const passport = require('./config/passport')()
 
+
 //controllers
 const userController = require('./controllers/users.js')
 const postsController = require('./controllers/posts.js')
@@ -17,7 +18,7 @@ app.use(passport.initialize());
 app.use(bodyParser.json())
 
 //routes
-app.use('/users', userController)
+app.use('/api/users', userController)
 app.use('/files', express.static('files'));
 app.use('/api/posts', postsController)
 app.use('/api/cities', citiesController)

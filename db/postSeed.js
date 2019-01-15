@@ -12,4 +12,6 @@ Post.remove({})
     })
     .catch(err => {
         console.log(err)
-})
+});
+
+Post.findById

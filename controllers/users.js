@@ -6,6 +6,11 @@ const config = require('../config/config')
 const mongoose = require('../models/User')
 const User = mongoose.model('User')
 
+router.get('/', (req, res) => {
+  User.find({})
+      .then(posts => res.json(posts))
+})
+
 router.post('/signup', (req, res) => {
     if (req.body.email && req.body.password) {
       let newUser = {
