@@ -20,8 +20,8 @@ var allowCrossDomain = function(req, res, next) {
 
 
 //middleware
-// app.use(cors())
-app.use(allowCrossDomain)
+app.use(cors())
+// app.use(allowCrossDomain)
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(passport.initialize());
 app.use(bodyParser.json())
