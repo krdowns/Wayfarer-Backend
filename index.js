@@ -3,12 +3,17 @@ const bodyParser = require('body-parser');
 const cors = require('cors')
 const passport = require('./config/passport')()
 
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+  });
+
 
 //controllers
 const userController = require('./controllers/users.js')
 const postsController = require('./controllers/posts.js')
 const citiesController = require('./controllers/cities.js')
-
 const app = express()
 
 //middleware
