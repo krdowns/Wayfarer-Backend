@@ -26,6 +26,12 @@ router.post('/signup', (req, res) => {
             User.create(newUser)
               .then(user => {
                 if (user) {
+                  // res.json({
+                  //     token: 'token',
+                  //      name: user.name,
+                  //      currentCity: user.currentCity,
+                  //      joinDate: user.joinDate
+                  // })
                   let payload = { id: newUser.id }
                   let token = jwt.encode(payload, config.jwtSecret)
                   res.json({
