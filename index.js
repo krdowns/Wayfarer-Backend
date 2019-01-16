@@ -17,9 +17,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(passport.initialize());
 app.use(bodyParser.json())
 
+
 //routes
-app.use('/api/users', userController)
-app.use('/files', express.static('files'));
+app.use('/users', userController)
+app.use('/files', express.static(__dirname+'/files'));
 app.use('/api/posts', postsController)
 app.use('/api/cities', citiesController)
 

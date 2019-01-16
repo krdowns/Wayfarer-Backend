@@ -8,7 +8,7 @@ const User = mongoose.model('User')
 
 router.get('/', (req, res) => {
   User.find({})
-      .then(posts => res.json(posts))
+      .then(users => res.json(users))
 })
 
 router.post('/signup', (req, res) => {

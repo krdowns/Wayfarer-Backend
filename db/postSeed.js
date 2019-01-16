@@ -3,15 +3,26 @@ const postData = require('./post-data')
 const Post = mongoose.model('Post')
 
 Post.remove({})
+    // .then(_ => {
+    //     Post.findById({author: postData.author})
+    // })
     .then(_ => {
-        Post.collection.insert(postData)
+        console.log(postData)
+        let posts = []
+        postData.map(p=>{
+            let pp= p
+            pp.author= mongoose.Types.ObjectId(p.author)
+            console.log(pp)
+            posts.push(pp)
+        })
+        console.log(posts)
+        
+        Post.collection.insert(posts)
             .then(seededEntries => {
                 console.log(seededEntries)
-                process.exit()
+                //process.exit()
             })
     })
     .catch(err => {
         console.log(err)
 });
-
-Post.findById

@@ -1,26 +1,26 @@
 [
     {
-        "img": "localhost:3000/files/cities/SanFrancisco.jpg",
+        "img": "http://localhost:3001/files/cities/SanFrancisco.jpg",
         "title": "My SF Journey",
-        "author": "5c3d12a47a00667e40dee73a",
+        "author": "5c3e4e0b774bb591002be9ad",
         "content": "We touch the canvas, the canvas takes what it wants. I guess that would be considered a UFO. A big cotton ball in the sky. This is your world, whatever makes you happy you can put in it. Go crazy. Here's another little happy bush All you have to learn here is how to have fun. This is your world, whatever makes you happy you can put in it. Go crazy. Here's another little happy bush All you have to learn here is how to have fun."
     },
     {
-        "img": "localhost:3000/files/cities/Berlin.jpg",
+        "img": "http://localhost:3001/files/cities/Berlin.jpg",
         "title": "My Berlin Journey",
-        "author": "5c3d12a47a00667e40dee73a",
+        "author": "5c3e4e0b774bb591002be9ad",
         "content": "We touch the canvas, the canvas takes what it wants. I guess that would be considered a UFO. A big cotton ball in the sky. This is your world, whatever makes you happy you can put in it. Go crazy. Here's another little happy bush All you have to learn here is how to have fun. This is your world, whatever makes you happy you can put in it. Go crazy. Here's another little happy bush All you have to learn here is how to have fun."
     },
     {
-        "img": "localhost:3000/files/cities/HongKong.jpg",
+        "img": "http://localhost:3001/files/cities/HongKong.jpg",
         "title": "My Hong Konk Journey",
-        "author": "Rachele",
+        "author": "5c3e4e0b774bb591002be9ad",
         "content": "We touch the canvas, the canvas takes what it wants. I guess that would be considered a UFO. A big cotton ball in the sky. This is your world, whatever makes you happy you can put in it. Go crazy. Here's another little happy bush All you have to learn here is how to have fun. This is your world, whatever makes you happy you can put in it. Go crazy. Here's another little happy bush All you have to learn here is how to have fun."
     },
     {
-        "img": "localhost:3000/files/cities/Sydney.jpg",
+        "img": "http://localhost:3001/files/cities/Sydney.jpg",
         "title": "My Sydney Journey",
-        "author": "Rachele",
+        "author": "5c3e4e0b774bb591002be9ad",
         "content": "We touch the canvas, the canvas takes what it wants. I guess that would be considered a UFO. A big cotton ball in the sky. This is your world, whatever makes you happy you can put in it. Go crazy. Here's another little happy bush All you have to learn here is how to have fun. This is your world, whatever makes you happy you can put in it. Go crazy. Here's another little happy bush All you have to learn here is how to have fun."
     }
 ]
