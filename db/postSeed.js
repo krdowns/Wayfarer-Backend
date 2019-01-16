@@ -3,9 +3,6 @@ const postData = require('./post-data')
 const Post = mongoose.model('Post')
 
 Post.remove({})
-    // .then(_ => {
-    //     Post.findById({author: postData.author})
-    // })
     .then(_ => {
         console.log(postData)
         let posts = []
@@ -20,7 +17,6 @@ Post.remove({})
         Post.collection.insert(posts)
             .then(seededEntries => {
                 console.log(seededEntries)
-                //process.exit()
             })
     })
     .catch(err => {
