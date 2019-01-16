@@ -27,4 +27,4 @@ app.use('/api/cities', citiesController)
 
 
 //server connection
-app.listen(3001, () => console.log('Listening on port 3001 :)'))
+app.listen(process.env.PORT || 3001)
